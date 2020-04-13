@@ -41,6 +41,7 @@ public class SceneSwitch : MonoBehaviour
     public void LevelSelect(int _level)
     {
         level = _level;
+        Ball.balls = new List<GameObject>();
         SceneManager.LoadScene(sceneName: $"level_{_level}");
     }
 
